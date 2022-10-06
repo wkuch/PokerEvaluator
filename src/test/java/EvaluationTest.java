@@ -117,6 +117,9 @@ public class EvaluationTest {
         assertTrue(handWithLowStraightFlush.isStraight());
         assertTrue(handWithLowStraightFlush.isFlush());
         assertEquals(0, handWithLowStraightFlush.getMultiples().size());
+        assertEquals(handWithFourOfAKind.getHighestCards().get(0).getValue(), Card.Value.ACE);
+        assertEquals(handWithFourOfAKind.getHighestCards().get(0).getSuit(), Card.Suit.C);
+
 
     }
 
